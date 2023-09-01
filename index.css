@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+font-family: 'Times New Roman', Times, serif;
+height: 100vh;
+width: 100vw;
+background-color:rgb(223, 141, 111);
+}
+
+
+.container{
+    background-color:cornsilk;
+    gap: 10rem !important;
+    overflow: hidden;
+  
+}
+.container h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    padding: 1rem;
+    font-size: 1.8rem;
+    color:black;
+    margin-left: 5rem;
+  
+}
+
+.container ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type:none;
+    margin-left: 60%;
+ margin-right: 5%;
+}
+.container li{
+    float:left;
+  padding: 3%;
+}
+
+.container a{
+    color:crimson;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 1.3rem;
+    }
+    .current a::after{
+        content: '_';
+        background-color:lime;
+        font-size: 2px;
+        display: block;
+    
+    }
+
+    #header{
+        width: 100%;
+        height: 80vh;
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+   
+        gap: 3rem;
+    }
+
+    .headertext{
+         text-align: left;
+    }
+    #header h1{
+        margin: 0 0 5px 0;
+        font-weight: 700;
+        color: black;
+    }
+    #header h2{
+        color: darkgray;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    #header .brand-name{
+        color: aquamarine;
+    }
+    .header-img{
+        width: 30rem;
+        height: 30rem;
+ text-align: right;
+    }
+
+    button{
+        width: 10rem;
+        height: 3rem;
+        border: none;
+        outline: 0;
+        text-align: center;
+        font-weight: 800;
+        color: crimson;
+        border-radius: 2rem;
+        background-color:aqua;
+        box-shadow: 2px 0px 10px black;
+        cursor: pointer;
+        
+    }
+    button:hover{
+background-color: crimson;
+color: aqua;
+
+    }
+    button:active{
+        transform: scale(0.98);
+    }
+
+    footer{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.1rem;
+        font-weight: 300;
+        font-family: cursive;
+        color: gray;
+        background-color:whitesmoke ;
+margin-top: 2%;
+width: 100%;
+
+    }
+
+    #header .animated{
+        animation: up-down 2s ease-in-out infinite alternate-reverse both;
+    }
+
+    
+    @keyframes up-down{
+        0%{
+            transform:translateY(10px);
+        }
+        100%{
+            transform: translateY(-10px);
+        }
+    }
+
+    @media (max-width:700px){
+        .container{
+            display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+           gap: 0.6rem !important;
+              }
+    
+   .container li{
+    padding: 3%;
+    
+  }
+  #header{
+    width: 100%;
+    height: 80vh;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+}
+.header-img{
+    order: 1;
+    width: 30rem;
+    height: 30rem;
+
+}
+.headertext{
+    order: 2;
+    margin-bottom: 2rem;
+}
+
+footer{
+    margin-top: 5%;
+    width: 100%;
+}
+
+    
+    }
+    @media (max-width:450px){
+.containeroptions ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.containeroptions  li{
+padding-top: 15%;
+}
+footer{
+    margin-top: 5%;
+    width: 100%;
+}
+
+
+    }
+
+
+    .conatctpagepart{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 10%;
+gap: 3rem;
+
+    }
+
+    #conatctpage{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    margin-left: 30%;
+   background-color:aliceblue;
+   width: 50%;
+   border-radius: 10%;
+   text-align: center;
+   font-weight: 700;
+   
+    }
+    .conatctpagepart input{
+text-align: center;
+border-radius: 10px;
+width: 12rem;
+height: 2rem;
+
+    }
